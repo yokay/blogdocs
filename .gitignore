@@ -1,0 +1,13 @@
+*.pwl
+*.pdf
+*.TSC
+*.vpd
+*.vssx
+*.vsdx
+*.vscode/
+
+!*.md
+!*.py
+!*.rst
+!*.png
+!*.ico
