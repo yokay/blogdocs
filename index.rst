@@ -12,6 +12,9 @@ data, calculations, or other contents contained in this drawing and document be 
 permission of  MYTHBIRD Co.,Ltd.
 
 
+
+©2021 Mythbird. All rights reserved.：www.mythbird.com 
+
 .. _Blog:
 
 Blog
