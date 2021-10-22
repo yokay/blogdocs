@@ -398,7 +398,7 @@ GDT电容容量一般为pF级别，将仿真文件中的100k电阻换成1pF电�
 
 
 
-## Reference
+### Reference
 
 [^1]: [心电图(ECG)解决方案](https://www.analog.com/media/cn/technical-documentation/apm-pdf/adi-ecg_solutions_cn.pdf)
 

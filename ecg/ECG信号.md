@@ -181,7 +181,7 @@
 
 Ti关于ECG专门有视频介绍[^2]
 
-## Reference
+### Reference
 
 [^1]: [检测并区分心脏起搏伪像](https://www.analog.com/cn/analog-dialogue/articles/detecting-and-distinguishing-cardiac-pacing-artifacts.html)
 
