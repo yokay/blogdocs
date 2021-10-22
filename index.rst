@@ -13,7 +13,7 @@ permission of  MYTHBIRD Co.,Ltd.
 
 
 
-©2021 Mythbird. All rights reserved.：www.mythbird.com 
+©2021 Mythbird. All rights reserved.：http://www.mythbird.com 
 
 .. _Blog:
 
