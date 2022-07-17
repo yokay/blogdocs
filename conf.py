@@ -173,27 +173,11 @@ latex_paper_size = 'a4'
 
 #latex_engine = 'pdflatex'
 #latex_use_xindy = False
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    # 'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    'preamble': '''
-    \\hypersetup{unicode=true}
-    \\usepackage[UTF8]{ctex}
-    ''',
-
-    # Latex figure (float) alignment
-    # 'figure_align': 'htbp',
+atex_elements = {
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
+    # 'preamble': '\\usepackage{xeCJK}\n',
 }
-
-l#atex_elements = {
-#    'preamble': '\\usepackage[UTF8]{ctex}\n',
-#    # 'preamble': '\\usepackage{xeCJK}\n',
-#}
 # The font size ('10pt', '11pt' or '12pt').
 latex_font_size = '10pt'
 
