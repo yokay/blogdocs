@@ -171,8 +171,8 @@ html_static_path = ['_static']
 # The paper size ('letter' or 'a4').
 latex_paper_size = 'a4'
 
-latex_engine = 'xelatex'
-latex_use_xindy = False
+# latex_engine = 'xelatex'
+# latex_use_xindy = False
 latex_elements = {
     'preamble': '\\usepackage[UTF8]{ctex}\n',
     # 'preamble': '\\usepackage{xeCJK}\n',
@@ -183,7 +183,7 @@ latex_font_size = '10pt'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', 'Deutzia.tex', u'Mythbird Design Documentation',
+    ('index', 'yokay.tex', u'Mythbird Design Documentation',
      u'Deutzia', 'manual'),
 ]
 
