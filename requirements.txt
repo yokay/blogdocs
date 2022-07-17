@@ -1,4 +1,4 @@
 sphinx
 sphinx-rtd-theme
-pdflatex
+xelatex
 recommonmark
