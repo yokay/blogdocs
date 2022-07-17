@@ -1,4 +1,4 @@
 sphinx
 sphinx-rtd-theme
-xelatex
+xelatex==2.0
 recommonmark
