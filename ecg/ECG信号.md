@@ -6,21 +6,27 @@
 
 心电信号是人体心脏的心脏细胞的细胞膜产生的电势差，心房和心室肌在静止的间歇中，由于细胞内外离子(包括K＋，Na＋，Ca2＋，cl-等)浓度差别很大，处于“极化状态”。一旦受到自搏细胞传来的激动，这极化状态便暂时瓦解，在心电图上称为“除极”(有少数学者称为“去极”)，由此产生心电活动。心房肌的除极在心电图上表现为P波，心室肌的除极表现为QRS波群。当然在一次除极后，心肌又会恢复原来的极化状态，此过程称为“复极”。复极过程远较除极缓慢，电活动所产生的振幅也较低。心房的复极在P—R段上，一般很不明显(唯有在右心房扩大时，P—R段轻度压低)。心室肌复极则表现为心电图上的ST段及T波。细胞膜电位变化如下图所示。  
 
-<img src="http://www.mythbird.com:8000/f/cb7d25b8acf24791b1b0/?dl=1" alt="细胞膜电位" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%BB%86%E8%83%9E%E8%86%9C%E7%94%B5%E4%BD%8D.png" alt="细胞膜电位" style="zoom:50%;" />
+
+
 
 
 
 细胞膜激动时产生的电位如下图所示。  
 
-<img src="http://www.mythbird.com:8000/f/8c284f45aa4541279074/?dl=1" style="zoom: 25%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%BB%86%E8%83%9E%E8%86%9C%E6%BF%80%E6%B4%BB.png" alt="细胞膜激活" style="zoom: 25%;" />
+
+
 
 
 
 在除极过程中，Na+内流，K+外流，形成反向电势差，电位突变产生脉冲信号。同时会传导下去，形成电流信号。传导完成后细胞膜复极，缓慢恢复到初始期。  
 
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%BF%83%E7%94%B5%E6%B3%A2%E5%BD%A2.jpg" alt="心电波形" style="zoom: 33%;" />
+
 从人体体表采集到各心肌细胞的动作电位叠加后形成如下图所示的心电信号。  
 
-<img src="http://www.mythbird.com:8000/f/9385d54b113149bc8bdf/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%BF%83%E8%84%8F%E5%90%84%E9%83%A8%E4%BD%8D%E5%8F%A0%E5%8A%A0%E4%BF%A1%E5%8F%B7.png" alt="心脏各部位叠加信号" style="zoom:50%;" />
 
 
 
@@ -28,7 +34,9 @@
 
 叠加后的信号就是看到做QRS波，如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/36672ac7bf5748b4978f/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%BF%83%E7%94%B5%E4%BF%A1%E5%8F%B7.jpg" alt="心电信号" style="zoom:33%;" />
+
+
 
 
 
@@ -51,7 +59,9 @@
 
 采集体表人体信号时，以人体心脏为中心，以人体体表为2D肢体导联平面，以人体额面（切面）为2D胸导联平面，进行电信号采集。如下图所示。  
 
-<img src="http://www.mythbird.com:8000/f/752b95739f554564aee5/?dl=1"  />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E4%BA%BA%E4%BD%93%E7%94%B5%E4%BF%A1%E5%8F%B7%E5%B9%B3%E9%9D%A2.png" alt="人体电信号平面"  />
+
+
 
 
 
@@ -67,13 +77,15 @@
 
 标准双极导联连接方式如下图所示。  
 
-![](http://www.mythbird.com:8000/f/a0dea9584a064f77b08a/?dl=1)
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E6%A0%87%E5%87%86%E5%8F%8C%E6%9E%81%E5%AF%BC%E8%81%94.jpg" alt="标准双极导联" style="zoom:50%;" />
+
+
 
 
 
 加压导联连接位置如下图所示。  
 
-<img src="http://www.mythbird.com:8000/f/2ee371a933ff4b998931/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%8A%A0%E5%8E%8B%E5%AF%BC%E8%81%94.png" alt="加压导联" style="zoom: 50%;" />
 
 
 
@@ -85,7 +97,7 @@
 
 加压导联采集到的电信号如下图所示。  
 
-<img src="http://www.mythbird.com:8000/f/33a78e457bd5455d8c14/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%8A%A0%E5%8E%8B%E5%AF%BC%E8%81%94%E4%BF%A1%E5%8F%B7.jpg" alt="加压导联信号" style="zoom: 67%;" />
 
 
 
@@ -93,19 +105,19 @@
 
 正常情况下，各肢体导联的心电信号如下图所示。
 
-![](http://www.mythbird.com:8000/f/a00f0e79b5954cb8a397/?dl=1)
+![肢体导联心电信号](https://mythidea.oss-cn-beijing.aliyuncs.com/%E8%82%A2%E4%BD%93%E5%AF%BC%E8%81%94%E5%BF%83%E7%94%B5%E4%BF%A1%E5%8F%B7.png)
 
 
 
 胸导测量方式如下图所示。  
 
-<img src="http://www.mythbird.com:8000/f/cbbc1a6831a141d19672/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E8%83%B8%E5%AF%BC%E6%B5%8B%E9%87%8F%E6%96%B9%E5%BC%8F.png" alt="胸导测量方式" style="zoom:50%;" />
 
 
 
 胸导联是将LA、RA、LL的电压平均形成WCT（威尔逊中心点），再与胸部电极做差变成胸导联信号。正常信号如下图所示。  
 
-![](http://www.mythbird.com:8000/f/66e7110ac42949d48a37/?dl=1)
+![胸导心电信号](https://mythidea.oss-cn-beijing.aliyuncs.com/%E8%83%B8%E5%AF%BC%E5%BF%83%E7%94%B5%E4%BF%A1%E5%8F%B7.png)
 
 
 
@@ -129,17 +141,17 @@
 
 - <font color = "red">基线漂移</font>,一般是由呼吸和电极滑动变化所异致的,频率一般<font color = "red">低于1Hz</font>,其表现为变化比较缓慢的类正弦曲线，对心电波形中的ST段识别影响较大。基线漂移的频率很低，其范围为0.05Hz至几Hz，主要分量在0.1Hz左右，而心电信号的P波、T波及ST段的频率也很低，其范围为0.5Hz至10Hz，两者的频谱非常接近，在消除噪声的同时，不可避免地对心电信号成分造成一定的损失。  
 
-<img src="http://www.mythbird.com:8000/f/2bd3a8e727a245759c48/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%9F%BA%E7%BA%BF%E6%BC%82%E7%A7%BB%E6%B3%A2%E5%BD%A2.png" alt="基线漂移波形" style="zoom:50%;" />
 
 
 
 -  <font color = "red">肌电干扰</font>,它是由人体肌肉颤抖产生不规则的高频电分扰所导致的,其频率范围很宽,一般在<font color = "red">10-1000Hz</font>之间,严重的肌电干扰信号频率在10～300Hz之间，其频谱特性接近于瞬时发生的高斯零均值带限白噪声。    
 
-![](http://www.mythbird.com:8000/f/2f8c5bc53dbf4070b8cf/?dl=1)
+![肌电干扰波形](https://mythidea.oss-cn-beijing.aliyuncs.com/%E8%82%8C%E7%94%B5%E5%B9%B2%E6%89%B0%E6%B3%A2%E5%BD%A2.png)
 
 -  <font color = "red">工频干扰</font>,主要来源于工频电源以及器件周围环境中的传输线辐射出的电磁场,频率为<font color = "red">50Hz或60Hz</font>,在ECG上出现为周期性的细小波纹,其频率成分主要为工频频率及其谐波  
 
-![](http://www.mythbird.com:8000/f/ba57a4741a96420f99e9/?dl=1)
+![工频干扰波形](https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%B7%A5%E9%A2%91%E5%B9%B2%E6%89%B0%E6%B3%A2%E5%BD%A2.png)
 
 各个干扰的滤波说明：  
 

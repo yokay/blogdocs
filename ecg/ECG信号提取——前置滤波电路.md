@@ -1,3 +1,5 @@
+# ECG信号提取——前置滤波电路
+
 由于ECG信号很微弱，处于mV级别，还有很多干扰信号，所以采集信号时需要进行滤波和放大处理，然后使用模数转换。为了滤波高频干扰和工频噪声，需要使用低通滤波器和陷波器抑制噪声，有时也要使用高通滤波器滤除低频噪声。信号滤除干净后有两种处理方式：
 
 - 放大后进行ADC处理
@@ -15,9 +17,9 @@
 
 ECG测量的基本电路框图如下所示。
 
-<img src="http://www.mythbird.com:8000/f/4650e32a6ab547cb8288/?dl=1" style="zoom:50%;" />
+![ecg基本电路](https://mythidea.oss-cn-beijing.aliyuncs.com/ecg%E5%9F%BA%E6%9C%AC%E7%94%B5%E8%B7%AF.png)
 
-其原理可以参考[ECG信号](http://www.mythbird.com/ecgxin-hao-te-zheng/)内容。
+其原理可以参考[ECG信号](https://www.mythbird.com/ECG%E4%BF%A1%E5%8F%B7/)内容。
 
 一般其技术指标类似：
 
@@ -49,11 +51,15 @@ pace信号为起搏器（pace maker)所产生，形态上为脉冲信号，宽�
 
 使用TI TINA进行RC仿真，电路如下所示。
 
-<img src="http://www.mythbird.com:8000/f/c54816536d4246fba74a/?dl=1" style="zoom:80%;" />
+![LPecg](https://mythidea.oss-cn-beijing.aliyuncs.com/LPecg.png)
+
+
 
 仿真结果如下所示。
 
-![](http://www.mythbird.com:8000/f/e1b1838fa5f544979e82/?dl=1)
+![LPecgresult](https://mythidea.oss-cn-beijing.aliyuncs.com/LPecgresult.png)
+
+
 
 可见三者截止频率（-3dB）分别为：2.37kHz，88kHz，4.8kHz。  
 
@@ -119,21 +125,25 @@ Note:
 
 具有放大功能的微分电路如下所示[^5]。
 
-<img src="http://www.mythbird.com:8000/f/ec8ccdaeed074d7a82a8/?dl=1" style="zoom: 33%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E5%88%86%E7%94%B5%E8%B7%AF.png" alt="微分电路" style="zoom:50%;" />
+
+
 
 高通的截止频率由C1和R1决定，C2进行相位补偿，R2调节比例。其中C1也可以称为“隔直电容”，用于通交流阻直流。脉冲信号的交流部分通过，直流部分被抑制。
 
 在后面使用双路阈值（窗口阈值）比较电路进行输出（双阈值表示上升沿阈值和下降沿阈值），如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/1320aa0e95084fd1a861/?dl=1" style="zoom: 33%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%8F%8C%E8%B7%AF%E9%98%88%E5%80%BC%E6%AF%94%E8%BE%83.png" alt="双路阈值比较" style="zoom:33%;" />
 
-使用100us/2mV的方波进行仿真简单的微分电路（高通滤波器），如下图所示。
+使用2mV/100us的方波进行仿真简单的微分电路（高通滤波器），如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/21d4af3da8854e6d91bc/?dl=1" style="zoom:25%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/Snipaste_2020-04-06_17-57-55.png" alt="Snipaste_2020-04-06_17-57-55" style="zoom:25%;" />
 
-<img src="http://www.mythbird.com:8000/f/d40db2f4e3a1436fa8f1/?dl=1" style="zoom: 50%;" />
+![高通波形](https://mythidea.oss-cn-beijing.aliyuncs.com/%E9%AB%98%E9%80%9A%E6%B3%A2%E5%BD%A2.png)
 
-<img src="http://www.mythbird.com:8000/f/d2f3c51a37254be091f8/?dl=1" style="zoom: 50%;" />
+![微分电路仿真结果](https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%BE%AE%E5%88%86%E7%94%B5%E8%B7%AF%E4%BB%BF%E7%9C%9F%E7%BB%93%E6%9E%9C.png)
+
+
 
 在方波上升沿和下降沿都有电容放电现象，结果为斜波。下降/上升的时间与RC（时间常数）有关。
 
@@ -145,19 +155,19 @@ Note:
 
 完整的仿真电路如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/be34b8623ec24d73aeb5/?dl=1" style="zoom: 67%;" />
+![pace检测电路](https://mythidea.oss-cn-beijing.aliyuncs.com/pace%E6%A3%80%E6%B5%8B%E7%94%B5%E8%B7%AF.png)
 
 设定的阈值为2.7V/2.3V。
 
 对2mV/100us脉冲进行时域仿真，结果如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/511745f226ae4ef4b6a7/?dl=1" style="zoom:67%;" />
+![pace检测电路仿真结果](https://mythidea.oss-cn-beijing.aliyuncs.com/pace%E6%A3%80%E6%B5%8B%E7%94%B5%E8%B7%AF%E4%BB%BF%E7%9C%9F%E7%BB%93%E6%9E%9C.png)
 
 在低于2.3V后输出低电平，之后高于2.3V时输出高电平。
 
 其幅频特性如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/4ec0e43850324e309421/?dl=1" style="zoom: 67%;" />
+![pace检测电路幅频特性](https://mythidea.oss-cn-beijing.aliyuncs.com/pace%E6%A3%80%E6%B5%8B%E7%94%B5%E8%B7%AF%E5%B9%85%E9%A2%91%E7%89%B9%E6%80%A7.png)
 
 最大放大倍数为44.38dB=165，最小电压为2.5-165*2m=2.17V，与仿真结果相差不大。
 
@@ -179,15 +189,15 @@ pace为高速信号，故宜采用高速比较器，同时tail-to-tail。
 
 完整电路如下图所示。采用双电源供电，能保证负脉冲信号能检测导。
 
-<img src="http://www.mythbird.com:8000/f/dafcb882bedd43ac9979/?dl=1" style="zoom:80%;" />
+![pace检测电路2](https://mythidea.oss-cn-beijing.aliyuncs.com/pace%E6%A3%80%E6%B5%8B%E7%94%B5%E8%B7%AF2.png)
 
 同样，仿真结果如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/fb661b6c602447a8ae63/?dl=1" style="zoom:80%;" />
+![pace检测电路2仿真结果](https://mythidea.oss-cn-beijing.aliyuncs.com/pace%E6%A3%80%E6%B5%8B%E7%94%B5%E8%B7%AF2%E4%BB%BF%E7%9C%9F%E7%BB%93%E6%9E%9C.png)
 
 幅频特性如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/08122863ec4943a4b8f1/?dl=1" style="zoom: 67%;" />
+![pace2检测电路幅频特性](https://mythidea.oss-cn-beijing.aliyuncs.com/pace2%E6%A3%80%E6%B5%8B%E7%94%B5%E8%B7%AF%E5%B9%85%E9%A2%91%E7%89%B9%E6%80%A7.png)
 
 最大放大倍数为46dB=200，最小电压为2.5-2m*200=2.1V，与仿真结果相差不大。
 
@@ -213,17 +223,19 @@ VM2处信号的幅频特性如下图所示。
 
 工频干扰来自常规用电中的交流电。由于市电为交流电，所有使用市电的设备都会与人体产生同频的干扰，导致干扰会通过导联线进入系统。如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/50ed53696be242ba9181/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%85%B1%E6%A8%A1%E5%B9%B2%E6%89%B0%E6%A8%A1%E5%9E%8B.jpg" alt="共模干扰模型" style="zoom:50%;" />
 
 市电网络与人体，人体和大地都有等效电容存在，而市电为交流，则人体上会有分压，频率与市电一样。其产生的微弱电流为“位移电流”。
 
 以单导测量为例，分析“位移电流”的影响。如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/ac21f33e83bf409197d7/?dl=1" style="zoom: 50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%B7%A5%E9%A2%91%E5%B9%B2%E6%89%B0%E5%B1%8F%E8%94%BD%E9%A9%B1%E5%8A%A8.jpg" alt="电缆工频干扰屏蔽驱动" style="zoom:50%;" />
 
-位移电流*i*db会造成共模电位Vc=*i*db*ZG，计算公式如下图所示。
+位移电流*i*db会造成共模电位Vc=*i*db*ZG，该共模电压为Vc，阻抗为Zin。两个电极位置的阻抗分别为Z1和Z2，则Vout计算公式如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/02ccb0841d5247a380a6/?dl=1" style="zoom: 33%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E4%BD%8D%E7%A7%BB%E7%94%B5%E6%B5%81%E8%AE%A1%E7%AE%97.png" alt="位移电流计算" style="zoom:33%;" />
+
+先后为差模电压放大Gd倍，然后是屏蔽电缆共模差压放大Gd倍，最后是差分信号放大Gd倍。
 
 从公式中可知，Vc对输出有影响，其与运放的CMRR有关，与电极位置的阻抗和运放的输入阻抗有关。为了减小影响，可以做以下措施：
 
@@ -233,9 +245,9 @@ VM2处信号的幅频特性如下图所示。
 
 
 
-对于浮低设备，电缆也会引入干扰。如下图所示。
+对于浮地设备，电缆也会引入干扰。如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/f22b2e7aa1e5430693f0/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%B7%A5%E9%A2%91%E5%B9%B2%E6%89%B0.jpg" alt="电缆工频干扰" style="zoom:50%;" />
 
 假定：引线1中的电流是*i*d1，引线2中的电流是*i*d2，接地回路的电流=*i*d1+ *i*d2。因Z1和Z2的不一致而转变为差模电位：V+ –V- = *i*d1*Z2 – *i*d2*Z1= *i*d (Z2 –Z1)。为了降低电缆造成的干扰，可以做以下措施：
 
@@ -254,25 +266,25 @@ VM2处信号的幅频特性如下图所示。
 
 电缆的干扰是由于市电与电缆，电缆和地之间有等效电容（屏蔽线接地），产生感应电流（或者也可以是电容分压）。如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/4ad3f06d64e4404abf06/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%B7%A5%E9%A2%91%E5%B9%B2%E6%89%B0%E7%94%B5%E6%B5%81.jpg" alt="电缆工频干扰电流" style="zoom:50%;" />
 
 加入共模电压为Vc，如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/53b68b51ffe74d4fae75/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%85%B1%E6%A8%A1%E8%BD%AC%E5%B7%AE%E6%A8%A1jpg.png" alt="电缆共模转差模jpg" style="zoom:50%;" />
 
 由于Rs、C不一样，导致进入运放得Uic1和Uic2不一样，产生差模电压Uid。其产生原因如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/9f63806b1fbf4c4e8138/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%85%B1%E6%A8%A1%E8%BD%AC%E5%B7%AE%E6%A8%A1%E7%94%B5%E6%B5%81%E5%8E%9F%E5%9B%A0.jpg" alt="电缆共模转差模电流原因" style="zoom:50%;" />
 
 在屏蔽线上得电压因为Rs、C不一样而不同，产生了电流ic（即id），导致输入电压不同。计算公式如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/c568420c2f884726b2de/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%B7%A5%E9%A2%91%E5%B9%B2%E6%89%B0%E7%94%B5%E6%B5%81%E5%80%BC.jpg" alt="电缆工频干扰电流值" style="zoom:50%;" />
 
 其分母为共模电压。
 
 通过屏蔽驱动，将中心电平反馈导屏蔽线上，使分布为心电信号。如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/5c977ccf9de24ef9bf3b/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E7%BC%86%E5%B7%A5%E9%A2%91%E5%B9%B2%E6%89%B0%E7%94%B5%E6%B5%81%E6%B6%88%E9%99%A4.png" alt="电缆工频干扰电流消除" style="zoom:50%;" />
 
 最终，分母为Uid（Uic+Uid/2-Uic=Uid/2），即心电信号，极大得降低了因分布电容和电阻不同导致得差模电压，消除了共模电压产生得差模电压。
 
@@ -282,11 +294,11 @@ VM2处信号的幅频特性如下图所示。
 
 右腿驱动电流消除人体“位移电流”产生的影响。原理图如下所示。
 
-<img src="http://www.mythbird.com:8000/f/d2468c3f49e84545a8ca/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%8F%B3%E8%85%BF%E9%A9%B1%E5%8A%A8%E7%94%B5%E8%B7%AF.jpg" alt="右腿驱动电路" style="zoom:50%;" />
 
 人体位移电流产生的共模电压Vc，通过放大电路反向放大后输出Vo，其相位与Vc相反，从而达到抵消的作用（电流也是相反）。上图的等效公式如下所示。
 
-<img src="http://www.mythbird.com:8000/f/4782b257d21a4a82b86f/?dl=1" style="zoom:33%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E5%8F%B3%E8%85%BF%E9%A9%B1%E5%8A%A8%E7%94%B5%E8%B7%AF%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F.jpg.png" alt="右腿驱动电路计算公式.jpg" style="zoom:33%;" />
 
 具体工作原理可参考[^8][^9]。
 
@@ -335,7 +347,7 @@ ESD保护对于双电源结构的，需要正向和方向都进行保护。
 
 EC13关于除颤测试电路如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/81e1daffaebc45148cf0/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E9%99%A4%E9%A2%A4%E6%B5%8B%E8%AF%95%E7%94%B5%E8%B7%AF.png" alt="除颤测试电路" style="zoom:50%;" />
 
 C=32uF L=25mH R+RL≤11ohm RL为DC的内阻。
 
@@ -350,19 +362,19 @@ at 20 s intervals in those cases where more than one discharge is indicated 。
 
 使用抗除颤电阻时，使用该电路仿真[^15]，计算除颤电阻的功率。仿真图如下所示。
 
-<img src="http://www.mythbird.com:8000/f/6f4943f14d2c411ebb3a/?dl=1" style="zoom:50%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E6%8A%97%E9%99%A4%E9%A2%A4%E4%BB%BF%E7%9C%9F%E7%94%B5%E8%B7%AF.png" alt="抗除颤仿真电路" style="zoom:50%;" />
 
 使用时控开关控制电源，从结果可以看出在抗除颤电阻R4上有个脉冲波形，产生了脉冲电流和电压。峰值功率为30W，峰值电压达到1.72kV，脉冲时间大概为20ms。电阻必须能耐受这样的条件，否则无法满足要求。
 
 由于波形近似为三角波，需要等效为脉冲方波（一般Datasheet中会有脉冲方波与峰值功率的对于曲线）。等效原理如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/9d65d3df549248e7bb2c/?dl=1" style="zoom: 67%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E7%AD%89%E6%95%88%E6%96%B9%E6%B3%A2%E5%9B%BE.png" alt="等效方波图" style="zoom:67%;" />
 
 其他波形等效如下图所示。
 
-<img src="http://www.mythbird.com:8000/f/fe5818ec44634a1f9aa2/?dl=1" style="zoom: 67%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E6%B3%A2%E5%BD%A2%E7%AD%89%E6%95%88%E5%9B%BE.png" alt="波形等效图" style="zoom: 67%;" />
 
-<img src="http://www.mythbird.com:8000/f/21a7d329d78f47149def/?dl=1" style="zoom: 67%;" />
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/%E6%94%BE%E7%94%B5%E6%97%B6%E9%97%B4%E5%B8%B8%E6%95%B0.png" alt="放电时间常数" style="zoom:67%;" />
 
 示例中时间常数t=7.15ms，故等效脉冲宽度T=7.15ms/2=3.575ms。
 
@@ -402,24 +414,24 @@ GDT电容容量一般为pF级别，将仿真文件中的100k电阻换成1pF电�
 
 [^1]: [心电图(ECG)解决方案](https://www.analog.com/media/cn/technical-documentation/apm-pdf/adi-ecg_solutions_cn.pdf)
 
-[^2]: [极化电压](http://www.mythbird.com/dian-ji-ji-hua/)
+[^2]: [极化电压](https://www.mythbird.com/polarization-voltage.html)
 
 [^3]: [检测并区分心脏起搏伪像](https://www.analog.com/cn/analog-dialogue/articles/detecting-and-distinguishing-cardiac-pacing-artifacts.html)
 [^4]: [积分电路和微分电路的工作原理](https://blog.csdn.net/weixin_42562514/article/details/97653660)
 
-[^5]: [Hardware Pace using Slope Detection](http://www.mythbird.com:8000/f/0d2663a7f1244d02bb12/?dl=1)
+[^5]: [Hardware Pace using Slope Detection](http://www.ivixivi.com/f/1440b94ef81644f88543/?dl=1)
 
-[^6]: [pace检测仿真文件](http://www.mythbird.com:8000/f/0243bc41a7284a998e8c/?dl=1)
-[^7]: [pace检测仿真文件第二种](http://www.mythbird.com:8000/f/ef37c08a60454bcca0f5/?dl=1)
+[^6]: [pace检测仿真文件](http://www.ivixivi.com/f/2d4811f003f24729a6e7/?dl=1)
+[^7]: [pace检测仿真文件第二种](http://www.ivixivi.com/f/aba13a2343714ccfa818/?dl=1)
 [^8]: [Improving Common-Mode Rejection Using the Right-Leg Drive Amplifier](http://www.mythbird.com:8000/f/988a750cc96e4cfeb72f/?dl=1)
 [^9]: [Driven-Right-Leg-Circuit-Design](http://www.mythbird.com:8000/f/405525168ab9470dbbc0/?dl=1)
-[^10]: [TI右腿驱动仿真电路](http://www.mythbird.com:8000/f/49b53a736cf540518385/?dl=1)
+[^10]: [TI右腿驱动仿真电路](http://www.ivixivi.com/f/9f275ef3cb1947a09a85/?dl=1)
 
 [^11]: [金属氧化膜电阻的浪涌设计](http://www.mythbird.com:8000/f/c0b219c20e324ca7a28e/?dl=1)
 [^12]: [ESD/浪涌保护器件使用方法：浪涌放电管](https://product.tdk.com/info/zh/products/protection/voltage/arrester/technote/apn-arrester.html)
 [^13]: [气体放电管和开关放电器](https://www.tdk-electronics.tdk.com.cn/download/141146/cd5c162f22ef4033d690e30b4bc8e7cb/surge-arrester-pp--cn.pdf)
 [^14]: [放电管如何有效防止瞬时过电压](http://www.ruilon-gdt.com/news_view.asp?id=298)
 
-[^15]: [抗除颤仿真文件](http://www.mythbird.com:8000/f/c1948f645f954eee819a/?dl=1)
-[^16]: [pace仿真文件第三种](http://www.ivixivi.com:8000/f/82a2a4467f35431eac86/?dl=1)
+[^15]: [抗除颤仿真文件](http://www.ivixivi.com/f/4d1e6062aa594445a8a7/?dl=1)
+[^16]: [pace仿真文件第三种](http://www.ivixivi.com/f/c720f57ae1284657924f/?dl=1)
 

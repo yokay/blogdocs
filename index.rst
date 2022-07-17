@@ -26,6 +26,8 @@ Blog
     wpc/index
     ecg/index
     amp/index
+    ppg/index
+    other/index
 
 
 
