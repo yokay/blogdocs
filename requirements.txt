@@ -2,4 +2,4 @@ sphinx
 sphinx-rtd-theme
 recommonmark
 pdflatex
-xelatex
+
