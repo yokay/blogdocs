@@ -1,3 +1,5 @@
+# MOSFET BASIC
+
 这里主要针对增强型MOS管进行讲解。其结构如下所示。  
 <img src="https://mythidea.oss-cn-beijing.aliyuncs.com/undefinedimage-20210906220106784.png" alt="image-20210906220106784" style="zoom:50%;" />
 上图为一个NMOSFET，G、S、D为3个金属电极，其中S、D的电极接到N+切被P-包围，G极与其他两极绝缘，N+为衬底（高掺浓度），N-为外延层（地掺浓度)。 判断是否为NMOS管主要看衬底是否为N型。   

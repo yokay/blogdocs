@@ -1,10 +1,6 @@
-EMI 的工程师指南
+# EMI 的工程师指南
 
 > 转自 [EMI 的工程师指南](https://e2echina.ti.com/blogs_/b/power_house/archive/2019/08/06/emi-1)by [Kevin Chen1](https://e2echina.ti.com/members/6063996)
-
-
-
-[TOC]
 
 
 

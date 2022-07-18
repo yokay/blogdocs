@@ -1,3 +1,5 @@
+# 嵌入式linux 移植Imagemagick
+
 > 项目中遇到图片转换，需要图片另存为功能.  
 
 通过查阅资料，**Imagemagick** 的**convert**命令工具可以实现图片转换；但是需要把**Imagemagick** 工具移植到嵌入式linux系统中；  

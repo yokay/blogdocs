@@ -1,3 +1,5 @@
+# FAT详解
+
 ## 一、基本概念
 
 先来明确几个概念。
@@ -189,7 +191,7 @@ FAT32 文件系统分区根目录的文件和目录都存放在根目录区中�
 
 接下来看到第 7 簇看一下该文件的内容，如图 9 所示。
 
-[![img](https://www.sunev.cn/blog/wp-content/uploads/2021/04/20210408_09_FAT32_123_txt_content.png)](https://www.sunev.cn/blog/wp-content/uploads/2021/04/20210408_09_FAT32_123_txt_content.png)图 9 123.txt 文件内容对比
+[![](https://www.sunev.cn/blog/wp-content/uploads/2021/04/20210408_09_FAT32_123_txt_content.png)图 9 123.txt 文件内容对比
 
 也和实际的 123.txt 文件内容一致。
 
@@ -197,9 +199,7 @@ FAT32 文件系统分区根目录的文件和目录都存放在根目录区中�
 
 ## 三、NAND FLASH Memory Map
 
-![image-20210919165557745](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210919165557745.png)
 
-![image-20210919170805368](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20210919170805368.png)
 
 RA[17:6]表示Blocks的index，RA[5:0]表示Pages的index，CA[11:0]表示具体到每个page中字节的地址。
 
@@ -435,3 +435,11 @@ DRESULT USER_write(
 
 
 写时如果不close，则无法同时read。
+
+
+
+## 四、STM32F411RET6 SD卡调试
+
+<img src="https://mythidea.oss-cn-beijing.aliyuncs.com/image-20220725221339960.png" alt="Keil 5 SDIO" style="zoom:50%;" />
+
+![SDIO_POWER](https://mythidea.oss-cn-beijing.aliyuncs.com/image-20220725221447382.png)
