@@ -169,9 +169,9 @@ html_static_path = ['_static']
 # -- Options for LaTeX output --------------------------------------------------
 
 # The paper size ('letter' or 'a4').
-latex_paper_size = 'a4'
+llatex_paper_size = 'a4'
 
-#latex_engine = 'pdflatex'
+latex_engine = 'xelatex'
 latex_use_xindy = False
 
 latex_elements = {
