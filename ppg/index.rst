@@ -4,7 +4,7 @@ PPG
 =================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     极化电压 
     皮肤模型

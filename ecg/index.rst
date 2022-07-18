@@ -4,7 +4,7 @@ ECG
 =================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     ECG信号 
     ECG信号提取——前置滤波电路

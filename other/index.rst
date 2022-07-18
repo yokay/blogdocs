@@ -4,7 +4,7 @@ Other
 =================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     多层陶瓷芯片电容器
     EMI 的工程师指南

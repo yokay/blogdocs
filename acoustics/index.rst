@@ -4,7 +4,7 @@ Acoustics
 =================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     声学相关基础知识 
     MEMS麦克风——助听器的未来
