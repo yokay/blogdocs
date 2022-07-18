@@ -169,28 +169,28 @@ html_static_path = ['_static']
 # -- Options for LaTeX output --------------------------------------------------
 
 # The paper size ('letter' or 'a4').
-#latex_paper_size = 'a4'
+llatex_paper_size = 'a4'
 
-#latex_engine = 'pdflatex'
-#latex_use_xindy = False
+latex_engine = 'xelatex'
+latex_use_xindy = False
 
-#latex_elements = {
-#    'preamble': '\\usepackage[UTF8]{ctex}\n',
+latex_elements = {
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
 #    # 'preamble': '\\usepackage{xeCJK}\n',
-#}
+}
 # The font size ('10pt', '11pt' or '12pt').
-#latex_font_size = '10pt'
+latex_font_size = '10pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-#latex_documents = [
-#    ('index', 'yokay.tex', u'Mythbird Design Documentation',
-#     u'Deutzia', 'manual'),
-#]
+latex_documents = [
+    ('index', 'yokay.tex', u'Mythbird Design Documentation',
+     u'Deutzia', 'manual'),
+]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = 'Deutzia.png'
+latex_logo = 'Deutzia.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
