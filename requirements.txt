@@ -1,6 +1,6 @@
 sphinx
 sphinx-rtd-theme
 recommonmark
-texlive-xelatex
+texlive-xelatex-base
 latex-cjk-all
 
