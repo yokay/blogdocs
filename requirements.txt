@@ -1,9 +1,6 @@
 sphinx
 sphinx-rtd-theme
 recommonmark
-<<<<<<< HEAD
 texlive-xelatex
 latex-cjk-all
-=======
-xelatex
->>>>>>> e7073da68302712ba49dfa6996a1ffb7894b7271
+
