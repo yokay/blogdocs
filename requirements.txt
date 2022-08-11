@@ -1,4 +1,5 @@
 sphinx
 sphinx-rtd-theme
 recommonmark
-pdflatex
+texlive-xelatex
+latex-cjk-all
