@@ -8,7 +8,9 @@ Copyright
 本文所有内容采用 CC BY-NC-SA 4.0 许可协议，如文章内容涉及侵权，请联系 yokay@mythbird.com。
 
 
-©2021 Mythbird. All rights reserved.：https://www.mythbird.com 
+©2022 Mythbird. All rights reserved.
+
+Home: www.mythbird.com 
 
 .. _Blog:
 

@@ -3,4 +3,3 @@ sphinx-rtd-theme
 recommonmark
 pdflatex
 pylatex
-ctex
