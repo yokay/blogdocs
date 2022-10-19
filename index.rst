@@ -28,6 +28,7 @@ Blog
     Oscillator/index 
     Precision Low Power Signal Chains/index
     other/index
+    tinyml/index
 
 
 

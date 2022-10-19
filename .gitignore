@@ -5,6 +5,7 @@
 *.vssx
 *.vsdx
 *.vscode/
+*.zip
 
 !*.md
 !*.py
