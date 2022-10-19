@@ -18,7 +18,7 @@ Blog
 =================
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 3
 
     ecg/index
     ppg/index
