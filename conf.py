@@ -171,12 +171,12 @@ html_static_path = ['_static']
 # The paper size ('letter' or 'a4').
 llatex_paper_size = 'a4'
 
-latex_engine = 'pdflatex'
+latex_engine = 'xelatex'
 latex_use_xindy = False
 
 latex_elements = {
-    'preamble': '\\usepackage[UTF8]{ctex}\n',
-#    # 'preamble': '\\usepackage{xeCJK}\n',
+#    'preamble': '\\usepackage[UTF8]{ctex}\n',
+     'preamble': '\\usepackage{xeCJK}\n',
 }
 # The font size ('10pt', '11pt' or '12pt').
 latex_font_size = '10pt'
