@@ -1,6 +1,6 @@
 .. _Yokay documentation master file:
 
-Precision Low Power Signal Chains
+Precision Low Power Signal Chains【转自ADI】
 =================
 
 .. toctree::
