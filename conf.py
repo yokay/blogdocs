@@ -184,22 +184,21 @@ latex_elements = {
     # The font size ('10pt', '11pt' or '12pt').
     #'pointsize': '10pt',
     # Additional stuff for the LaTeX preamble.
-    
-    'preamble': \\hypersetup{unicode=true},
-    'preamble': \\usepackage{CJKutf8},
-    'preamble': \\DeclareUnicodeCharacter{00A0}{\nobreakspace},
-    'preamble': \\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}},
-    'preamble': \\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}},
-    'preamble': \\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}},
-    'preamble': \\DeclareUnicodeCharacter{2713}{x},
-    'preamble': \\DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}},
-    'preamble': \\DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}},
-    'preamble': \\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}},
-    'preamble': \\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}},
-    'preamble': \\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}},
-    'preamble': \\begin{CJK}{UTF8}{gbsn},
-    'preamble': \\AtEndDocument{\end{CJK}}
-    
+    'preamble': '\\hypersetup{unicode=true}\n',
+    'preamble': '\\usepackage{CJKutf8}\n',
+    'preamble': '\\DeclareUnicodeCharacter{00A0}{\nobreakspace}\n',
+    'preamble': '\\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\n',
+    'preamble': '\\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}\n',
+    'preamble': '\\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}\n',
+    'preamble': '\\DeclareUnicodeCharacter{2713}{x}\n',
+    'preamble': '\\DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}\n',
+    'preamble': '\\DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}\n',
+    'preamble': '\\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}\n'},
+    'preamble': '\\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\n',
+    'preamble': '\\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\n',
+    'preamble': '\\begin{CJK}{UTF8}{gbsn}\n',
+    'preamble': '\\AtEndDocument{\end{CJK}}\n'
+
     }
 # The font size ('10pt', '11pt' or '12pt').
 latex_font_size = '10pt'
