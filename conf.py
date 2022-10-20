@@ -193,7 +193,7 @@ latex_elements = {
     'preamble': '\\DeclareUnicodeCharacter{2713}{x}\n',
     'preamble': '\\DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}\n',
     'preamble': '\\DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}\n',
-    'preamble': '\\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}\n'},
+    'preamble': '\\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}\n',
     'preamble': '\\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\n',
     'preamble': '\\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\n',
     'preamble': '\\begin{CJK}{UTF8}{gbsn}\n',
