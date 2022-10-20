@@ -184,7 +184,7 @@ latex_elements = {
     # The font size ('10pt', '11pt' or '12pt').
     #'pointsize': '10pt',
     # Additional stuff for the LaTeX preamble.
-    'preamble': '\\hypersetup{unicode=true}\n',
+    #'preamble': '\\hypersetup{unicode=true}\n',
     'preamble': '\\usepackage{CJKutf8}\n',
     'preamble': '\\DeclareUnicodeCharacter{00A0}{\nobreakspace}\n',
     'preamble': '\\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}\n',
@@ -196,7 +196,7 @@ latex_elements = {
     'preamble': '\\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}\n',
     'preamble': '\\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}\n',
     'preamble': '\\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\n',
-    'preamble': '\\begin{CJK}{UTF8}{gbsn}\n',
+    'preamble': '\\begin{CJK}{UTF8}\n',
     'preamble': '\\AtEndDocument{\end{CJK}}\n'
 
     }
