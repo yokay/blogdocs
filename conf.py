@@ -176,11 +176,11 @@ latex_paper_size = 'a4'
 latex_engine = 'latex'
 latex_use_xindy = False
 
-# latex_elements = {
-#    'preamble': '\\usepackage[UTF8]{ctex}\n',
-#     'preamble': '\\usepackage{xeCJK}\n',
-# }
 latex_elements = {
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
+    'preamble': '\\usepackage{xeCJK}\n',
+}
+""" latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     # 'papersize': 'letterpaper',
     # The font size ('10pt', '11pt' or '12pt').
@@ -202,7 +202,7 @@ latex_elements = {
     'preamble': '\\AtEndDocument{\end{CJK}}\n',
     'preamble': '\\usepackage[UTF8]{ctex}\n',
     'preamble': '\\usepackage{xeCJK}\n',
-}
+} """
 # The font size ('10pt', '11pt' or '12pt').
 latex_font_size = '10pt'
 
