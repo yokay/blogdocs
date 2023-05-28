@@ -10,7 +10,7 @@ Copyright
 
 ©2022 Mythbird. All rights reserved.
 
-Home: www.mythbird.com 
+Home: `www.mythbird.com<www.mythbird.com>`_
 
 .. _Blog:
 

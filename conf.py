@@ -200,6 +200,8 @@ latex_elements = {
     'preamble': '\\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}\n',
     'preamble': '\\begin{CJK}{UTF8}\n',
     'preamble': '\\AtEndDocument{\end{CJK}}\n',
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
+    'preamble': '\\usepackage{xeCJK}\n',
 }
 # The font size ('10pt', '11pt' or '12pt').
 latex_font_size = '10pt'
