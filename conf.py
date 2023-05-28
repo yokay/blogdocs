@@ -173,7 +173,7 @@ html_static_path = ['_static']
 # The paper size ('letter' or 'a4').
 latex_paper_size = 'a4'
 
-latex_engine = 'latex'
+latex_engine = 'XeLaTeX'
 latex_use_xindy = False
 
 latex_elements = {
