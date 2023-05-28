@@ -20,6 +20,7 @@ Blog
 .. toctree::
     :maxdepth: 3
 
+    Hardware/index
     ecg/index
     ppg/index
     amp/index
