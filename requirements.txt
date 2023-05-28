@@ -3,4 +3,3 @@ sphinx-rtd-theme
 recommonmark
 PyLaTeX
 pdflatex
-LuaLaTeX
