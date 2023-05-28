@@ -3,5 +3,3 @@ sphinx-rtd-theme
 recommonmark
 PyLaTeX
 pdflatex
-texlive-xetex
-texlive
