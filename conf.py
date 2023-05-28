@@ -19,6 +19,8 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.append(os.path.abspath('.'))
 
+os.system(
+    "apt install texlive texlive-xetex texlive-lang-chinese texlive-fonts-extra")
 # -- General configuration -----------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
@@ -43,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Mythbird'
-copyright = u'2019-2022, Yokay'
+copyright = u'2019-2023, Yokay'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
