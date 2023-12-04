@@ -10,10 +10,12 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
-
+  jobs:
+    post_create_environment:
+      - python -m pip install sphinx-material
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
-  builder: mkdocs
+  builder: html
   configuration: conf.py
   fail_on_warning: false
 

@@ -30,12 +30,12 @@ os.system(
 #   'exhale',
 #              ]
 
-extensions = ['recommonmark']
+extensions = ['recommonmark','sphinx_markdown_tables']
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = {'.rst': 'restructuredtext', '.md': 'markdown'}
 
 # The encoding of source files.
 source_encoding = 'utf-8'
@@ -99,7 +99,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'default'
-
+html_theme = 'sphinx_material'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
