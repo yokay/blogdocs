@@ -173,7 +173,7 @@ html_static_path = ['_static']
 # The paper size ('letter' or 'a4').
 latex_paper_size = 'a4'
 
-latex_engine = 'XeLaTeX'
+latex_engine = 'pdfLaTeX'
 latex_use_xindy = False
 
 latex_elements = {
@@ -210,7 +210,7 @@ latex_font_size = '10pt'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
     ('index', 'yokay.tex', u'Mythbird Design Documentation',
-     u'Deutzia', 'manual'),
+     u'Yokay', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -269,4 +269,4 @@ extensions = ['sphinx.ext.autodoc',
 
 # # Tell sphinx what the pygments highlight language should be.
 # highlight_language = 'c'
-extensions = ['sphinx_rtd_theme']
+# extensions = ['sphinx_rtd_theme']

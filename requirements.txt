@@ -2,5 +2,5 @@ sphinx
 sphinx-rtd-theme
 recommonmark
 PyLaTeX
-xelatex
+pdflatex
 latex
