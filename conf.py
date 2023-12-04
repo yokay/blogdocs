@@ -177,8 +177,8 @@ latex_engine = 'pdfLaTeX'
 latex_use_xindy = False
 
 latex_elements = {
-    'preamble': '\\usepackage[UTF8]{ctex}\n',
-    'preamble': '\\usepackage{xeCJK}\n',
+    'preamble': '\\usepackage{CJKutf8}\n',
+    'preamble': '\\usepackage{CJK}\n',
 }
 """ latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
