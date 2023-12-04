@@ -240,15 +240,15 @@ latex_logo = 'Deutzia.png'
 #     "doc": "./doxyoutput/xml"
 # }
 # breathe_default_project = "doc"
-# extensions = ['sphinx.ext.autodoc',
-#    'sphinx.ext.doctest',
-#    'sphinx.ext.intersphinx',
-#    'sphinx.ext.todo',
-#    'sphinx.ext.coverage',
-#    'sphinx.ext.mathjax',
-#    'sphinx.ext.ifconfig',
-#    'sphinx.ext.viewcode',
-#    'sphinx.ext.githubpages']
+extensions = ['sphinx.ext.autodoc',
+              'sphinx.ext.doctest',
+              'sphinx.ext.intersphinx',
+              'sphinx.ext.todo',
+              'sphinx.ext.coverage',
+              'sphinx.ext.mathjax',
+              'sphinx.ext.ifconfig',
+              'sphinx.ext.viewcode',
+              'sphinx.ext.githubpages']
 # # Setup the exhale extension
 # exhale_args = {
 #     # These arguments are required
@@ -269,4 +269,4 @@ latex_logo = 'Deutzia.png'
 
 # # Tell sphinx what the pygments highlight language should be.
 # highlight_language = 'c'
-# extensions = ['sphinx_rtd_theme']
+extensions = ['sphinx_rtd_theme']
