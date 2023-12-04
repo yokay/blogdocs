@@ -269,3 +269,4 @@ latex_logo = 'Deutzia.png'
 
 # # Tell sphinx what the pygments highlight language should be.
 # highlight_language = 'c'
+extensions = ['sphinx_rtd_theme']
