@@ -19,6 +19,16 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.append(os.path.abspath('.'))
 
+extensions = ["sphinx.ext.intersphinx",
+              "recommonmark",
+              "sphinx_tabs.tabs",
+              "sphinx_markdown_tables",
+              "sphinx.ext.todo",
+              "sphinx_material"]
+
+
+todo_include_todos = True
+
 # -- General configuration -----------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
@@ -28,12 +38,14 @@ sys.path.append(os.path.abspath('.'))
 #   'exhale',
 #              ]
 
-extensions = ['recommonmark', 'sphinx_markdown_tables']
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = {'.rst': 'restructuredtext', '.md': 'markdown'}
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
 
 # The encoding of source files.
 source_encoding = 'utf-8'
@@ -239,15 +251,15 @@ latex_logo = 'Deutzia.png'
 #     "doc": "./doxyoutput/xml"
 # }
 # breathe_default_project = "doc"
-extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.doctest',
-              'sphinx.ext.intersphinx',
-              'sphinx.ext.todo',
-              'sphinx.ext.coverage',
-              'sphinx.ext.mathjax',
-              'sphinx.ext.ifconfig',
-              'sphinx.ext.viewcode',
-              'sphinx.ext.githubpages']
+# extensions = ['sphinx.ext.autodoc',
+#               'sphinx.ext.doctest',
+#               'sphinx.ext.intersphinx',
+#               'sphinx.ext.todo',
+#               'sphinx.ext.coverage',
+#               'sphinx.ext.mathjax',
+#               'sphinx.ext.ifconfig',
+#               'sphinx.ext.viewcode',
+#               'sphinx.ext.githubpages']
 # # Setup the exhale extension
 # exhale_args = {
 #     # These arguments are required
@@ -268,4 +280,3 @@ extensions = ['sphinx.ext.autodoc',
 
 # # Tell sphinx what the pygments highlight language should be.
 # highlight_language = 'c'
-extensions = ['sphinx_material']
