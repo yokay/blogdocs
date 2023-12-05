@@ -23,8 +23,7 @@ extensions = ["sphinx.ext.intersphinx",
               "recommonmark",
               "sphinx_tabs.tabs",
               "sphinx_markdown_tables",
-              "sphinx.ext.todo",
-              "sphinx-material"]
+              "sphinx.ext.todo"]
 
 
 todo_include_todos = True
