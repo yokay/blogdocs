@@ -1,7 +1,8 @@
-sphinx==6.0.0
+recommonmark
+Sphinx
 sphinx-material
-recommonmark==0.7.1
-sphinx_markdown_tables==0.0.17
+sphinx-material-saltstack
+sphinx_markdown_tables
 PyLaTeX
 pdflatex
 latex
