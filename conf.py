@@ -131,7 +131,7 @@ html_theme_options = {
     # Set the repo location to get a badge with stats
     # 'repo_url': 'https://github.com/project/project/',
     # 'repo_name': 'Project',
-
+    'logo_icon': 'Deutzia.png',
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 2,
     # If False, expand all TOC entries
@@ -201,7 +201,9 @@ html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 #htmlhelp_basename = 'yokaydoc'
-
+html_sidebars = {
+    "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
+}
 
 # -- Options for LaTeX output --------------------------------------------------
 
