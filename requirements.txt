@@ -1,4 +1,4 @@
-sphinx==5.5.1
+sphinx==6.0.0
 sphinx-material
 recommonmark==0.7.1
 sphinx_markdown_tables==0.0.17
