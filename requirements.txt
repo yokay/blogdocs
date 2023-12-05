@@ -1,6 +1,5 @@
 recommonmark
 Sphinx
-sphinx-material
 sphinx-material-saltstack
 sphinx_markdown_tables
 PyLaTeX
