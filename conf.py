@@ -109,7 +109,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'default'
-html_theme = 'sphinx-material-saltstack'
+html_theme = 'sphinx-material'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -125,8 +125,8 @@ html_theme_options = {
     'base_url': 'https://doc.mythbird.com',
 
     # Set the color and the accent color
-    'color_primary': 'blue',
-    'color_accent': 'light-blue',
+    # 'color_primary': 'light-blue',
+    # 'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
     # 'repo_url': 'https://github.com/project/project/',
