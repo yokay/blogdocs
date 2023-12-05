@@ -54,7 +54,7 @@ source_encoding = 'utf-8'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Mythbird'
+project = u'Mythidea'
 copyright = u'2019-2023, Yokay'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -115,7 +115,7 @@ html_theme = 'sphinx-material-saltstack'
 # documentation.
 html_theme_options = {
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'Mythbird',
+    'nav_title': 'Mythidea',
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -132,8 +132,9 @@ html_theme_options = {
     # 'repo_url': 'https://github.com/project/project/',
     # 'repo_name': 'Project',
 
+    'logo_icon': 'logo.svg',
     # Visible levels of the global TOC; -1 means unlimited
-    'globaltoc_depth': 2,
+    'globaltoc_depth': 1,
     # If False, expand all TOC entries
     'globaltoc_collapse': False,
     # If True, show hidden TOC entries
@@ -145,7 +146,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "Mythbird Blog"
+html_title = "Mythidea's documentations"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -245,7 +246,7 @@ latex_font_size = '10pt'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', 'yokay.tex', u'Mythbird Design Documentation',
+    ('index', 'yokay.tex', u'Mythidea Design Documentation',
      u'Yokay', 'manual'),
 ]
 
