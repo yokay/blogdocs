@@ -114,7 +114,7 @@ html_theme = 'sphinx_material'
 # documentation.
 html_theme_options = {
     # Set the name of the project to appear in the navigation.
-    'nav_title': "Mythbird's Documents",
+    'nav_title': "Mythbird",
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -201,7 +201,7 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 #htmlhelp_basename = 'yokaydoc'
 html_sidebars = {
-    "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
+    "**": ["logo-text.html", "localtoc.html", "searchbox.html"]
 }
 
 # -- Options for LaTeX output --------------------------------------------------
