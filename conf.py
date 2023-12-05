@@ -24,7 +24,7 @@ extensions = ["sphinx.ext.intersphinx",
               "sphinx_tabs.tabs",
               "sphinx_markdown_tables",
               "sphinx.ext.todo",
-              "sphinx_material"]
+              "sphinx-material"]
 
 
 todo_include_todos = True
@@ -115,7 +115,7 @@ html_theme = 'sphinx_material'
 # documentation.
 html_theme_options = {
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'Mythbird',
+    'nav_title': 'Mythbird's Documents",
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -125,7 +125,7 @@ html_theme_options = {
     'base_url': 'https://doc.mythbird.com',
 
     # Set the color and the accent color
-    # 'color_primary': 'light-blue',
+    'color_primary': 'light-blue',
     # 'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
