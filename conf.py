@@ -114,7 +114,15 @@ html_theme = 'sphinx_material'
 # documentation.
 html_theme_options = {
     # Set the name of the project to appear in the navigation.
+<<<<<<< HEAD
     'nav_title': 'Mythidea',
+=======
+<<<<<<< HEAD
+    'nav_title': 'Mythidea',
+=======
+    'nav_title': "Mythbird",
+>>>>>>> 5ce455e75cce9f701bad483f891a1f7be03bcc3d
+>>>>>>> 6a15ca35fa9a7e745dd5299cac8a70b32b8aaea6
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -130,8 +138,17 @@ html_theme_options = {
     # Set the repo location to get a badge with stats
     # 'repo_url': 'https://github.com/project/project/',
     # 'repo_name': 'Project',
+<<<<<<< HEAD
 
     'logo_icon': 'logo.svg',
+=======
+<<<<<<< HEAD
+
+    'logo_icon': 'logo.svg',
+=======
+    #'logo_icon': 'Deutzia.png',
+>>>>>>> 5ce455e75cce9f701bad483f891a1f7be03bcc3d
+>>>>>>> 6a15ca35fa9a7e745dd5299cac8a70b32b8aaea6
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 1,
     # If False, expand all TOC entries
