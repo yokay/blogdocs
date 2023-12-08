@@ -23,8 +23,7 @@ extensions = ["sphinx.ext.intersphinx",
               "recommonmark",
               "sphinx_tabs.tabs",
               "sphinx_markdown_tables",
-              "sphinx.ext.todo",
-              "sphinx_material"]
+              "sphinx.ext.todo"]
 
 
 todo_include_todos = True
@@ -109,13 +108,17 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'default'
-html_theme = 'sphinx-material-saltstack'
+html_theme = 'sphinx_material'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
     # Set the name of the project to appear in the navigation.
+<<<<<<< HEAD
     'nav_title': 'Mythidea',
+=======
+    'nav_title': "Mythbird",
+>>>>>>> 5ce455e75cce9f701bad483f891a1f7be03bcc3d
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -125,14 +128,18 @@ html_theme_options = {
     'base_url': 'https://doc.mythbird.com',
 
     # Set the color and the accent color
-    'color_primary': 'blue',
-    'color_accent': 'light-blue',
+    'color_primary': 'light-blue',
+    # 'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
     # 'repo_url': 'https://github.com/project/project/',
     # 'repo_name': 'Project',
+<<<<<<< HEAD
 
     'logo_icon': 'logo.svg',
+=======
+    #'logo_icon': 'Deutzia.png',
+>>>>>>> 5ce455e75cce9f701bad483f891a1f7be03bcc3d
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 1,
     # If False, expand all TOC entries
@@ -202,7 +209,9 @@ html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 #htmlhelp_basename = 'yokaydoc'
-
+html_sidebars = {
+    "**": ["logo-text.html", "localtoc.html", "searchbox.html"]
+}
 
 # -- Options for LaTeX output --------------------------------------------------
 

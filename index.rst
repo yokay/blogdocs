@@ -18,7 +18,7 @@ Blog
 =================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     Hardware/index
     ecg/index
