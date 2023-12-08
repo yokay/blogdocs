@@ -115,9 +115,7 @@ html_theme = 'sphinx_material'
 html_theme_options = {
     # Set the name of the project to appear in the navigation.
 
-
     'nav_title': 'Mythidea',
-
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -134,14 +132,15 @@ html_theme_options = {
     # 'repo_url': 'https://github.com/project/project/',
     # 'repo_name': 'Project',
 
-
-    'logo_icon': 'favicon.ico',
+    'logo_icon': '&#xe869',
+    'html_minify': True,
+    'css_minify': True,
 
 
     # Visible levels of the global TOC; -1 means unlimited
-    'globaltoc_depth': 1,
+    'globaltoc_depth': 2,
     # If False, expand all TOC entries
-    'globaltoc_collapse': False,
+    'globaltoc_collapse': True,
     # If True, show hidden TOC entries
     'globaltoc_includehidden': False,
 }
