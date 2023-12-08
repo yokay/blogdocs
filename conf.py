@@ -135,13 +135,15 @@ html_theme_options = {
     # 'repo_name': 'Project',
 
 
-    'logo_icon': 'favicon.ico',
+    'logo_icon': '&#xe869',
+    'html_minify': True,
+    'css_minify': True,
 
 
     # Visible levels of the global TOC; -1 means unlimited
-    'globaltoc_depth': 1,
+    'globaltoc_depth': 2,
     # If False, expand all TOC entries
-    'globaltoc_collapse': False,
+    'globaltoc_collapse': True,
     # If True, show hidden TOC entries
     'globaltoc_includehidden': False,
 }
