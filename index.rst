@@ -20,11 +20,13 @@ Blog
 .. toctree::
     :maxdepth: 2
 
-    Hardware/index
+    
     ecg/index
     ppg/index
     amp/index
+    Power/index
     wpc/index
+    Hardware/index
     acoustics/index
     Oscillator/index 
     Precision Low Power Signal Chains/index

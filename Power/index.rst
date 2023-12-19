@@ -1,13 +1,14 @@
 .. _Yokay documentation master file:
 
-Other
+Power
 =================
 
 .. toctree::
     :maxdepth: 2
 
-    多层陶瓷芯片电容器
-    Σ-Δ模数转换器(ADC)揭秘
+    开关电源性能指标
+    全桥隔离变换器及其补偿网络设计
+
 
 
     
