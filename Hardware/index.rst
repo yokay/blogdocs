@@ -1,6 +1,6 @@
 .. _Yokay documentation master file:
 
-Other
+Hardware
 =================
 
 .. toctree::

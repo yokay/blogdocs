@@ -26,6 +26,7 @@ Blog
     amp/index
     Power/index
     wpc/index
+    EMC/index
     Hardware/index
     acoustics/index
     Oscillator/index 
